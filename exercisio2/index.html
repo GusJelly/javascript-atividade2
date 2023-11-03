@@ -22,23 +22,24 @@
         <div class="row">
             <div class="col">
                 <label for="First name">First Name</label>
-                <input class="form-control" type="text" name="First Name" value="John">
+                <input id="tb_firstName" class="form-control" type="text" name="First Name" placeholder="John">
             </div>
             <div class="col">
                 <label for="Last name">Last Name</label>
-                <input class="form-control" type="text" name="Last Name" value="Doe">
+                <input id="tb_lastName" class="form-control" type="text" name="Last Name" placeholder="Doe">
             </div>
             <div class="col">
                 <label for="Email">Email</label>
-                <input class="form-control" type="text" name="Email" value="name@example.com">
+                <input id="tb_email" class="form-control" type="text" name="Email" placeholder="name@example.com">
             </div>
         </div>
         <div class="row p-3">
             <div class="col"></div>
             <div class="col"></div>
             <div class="col"></div>
-            <button class="btn btn-primary col-1" type="button">+ Add</button>
+            <button id="btn_add" class="btn btn-primary col-1" type="button">+ Add</button>
         </div>
+
         <!-- Table showing info from form -->
         <div class="row">
             <table class="table">
@@ -52,15 +53,13 @@
                 </thead>
                 <!-- Table body -->
                 <tbody>
-                    <tr>
-                        <td>Gustavo</td>
-                        <td>Meireles</td>
-                        <td>gugatpm@gmail.com</td>
-                    </tr>
+                    <!-- To be filled in by javascript -->
                 </tbody>
             </table>
         </div>
+
     </div>
+
 </body>
 
 </html>
