@@ -15,9 +15,50 @@
 </head>
 
 <body>
+    <h1>Exercise 2</h1>
+
+    <!-- Form -->
     <div class="container">
-        <h1>Exercise 2</h1>
-        <div>
+        <div class="row">
+            <div class="col">
+                <label for="First name">First Name</label>
+                <input class="form-control" type="text" name="First Name" value="John">
+            </div>
+            <div class="col">
+                <label for="Last name">Last Name</label>
+                <input class="form-control" type="text" name="Last Name" value="Doe">
+            </div>
+            <div class="col">
+                <label for="Email">Email</label>
+                <input class="form-control" type="text" name="Email" value="name@example.com">
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <button class="btn btn-primary col-1" type="button">+ Add</button>
+        </div>
+        <!-- Table showing info from form -->
+        <div class="row">
+            <table class="table">
+                <!-- Table head -->
+                <thead>
+                    <tr>
+                        <th><b>First</b></th>
+                        <th><b>Last</b></th>
+                        <th><b>Email</b></th>
+                    </tr>
+                </thead>
+                <!-- Table body -->
+                <tbody>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>Meireles</td>
+                        <td>gugatpm@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
