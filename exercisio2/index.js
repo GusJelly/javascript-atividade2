@@ -6,6 +6,7 @@ const tableBody = document.querySelector(".table tbody");
 
 button.addEventListener("click", () => {
     let message = "";
+
     if (first_name.value.length < 3 || first_name.value === "") {
         message += "First name is invalid!\n";
     }
