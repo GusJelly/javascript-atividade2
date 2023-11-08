@@ -32,42 +32,52 @@ clear.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText = "0";
 });
+
 zero.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "0";
 });
+
 one.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "1";
 });
+
 two.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "2";
 });
+
 three.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "3";
 });
+
 four.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "4";
 });
+
 five.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "5";
 });
+
 six.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "6";
 });
+
 seven.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "7";
 });
+
 eight.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "8";
 });
+
 nine.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "9";
@@ -78,23 +88,31 @@ plus.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "+";
 });
+
 minus.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "-";
 });
+
 divide.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "/";
 });
+
 multiply.addEventListener("click", () => {
     check_for_zero();
     screen_text.innerText += "*";
 });
+
 decimal.addEventListener("click", () => {
     screen_text.innerText += ".";
 });
 
 equals.addEventListener("click", () => {
-    screen_text.innerText = math.evaluate(screen_text.innerText);
+    // Extremely dangerous code!
+    // This is why we can't let the user use
+    // the physical keyboard for inputing into the calculator.
+    // if they could, they would be able to run javascript code!
+    screen_text.innerText = eval(screen_text.innerText);
 });
 
