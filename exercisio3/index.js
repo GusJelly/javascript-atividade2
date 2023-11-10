@@ -109,10 +109,6 @@ decimal.addEventListener("click", () => {
 });
 
 equals.addEventListener("click", () => {
-    // Extremely dangerous code!
-    // This is why we can't let the user use
-    // the physical keyboard for inputing into the calculator.
-    // if they could, they would be able to run javascript code!
-    screen_text.innerText = eval(screen_text.innerText);
+    screen_text.innerText = math.evaluate(screen_text.innerText);
 });
 
